@@ -4,7 +4,7 @@
   "description": "tool for digging into nested directories",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha -C --reporter list test.js"
   },
   "keywords": [
     "node",
@@ -12,5 +12,8 @@
     "plugins"
   ],
   "author": "Christopher Oyler <christopher.oyler@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~2.4.5"
+  }
 }
